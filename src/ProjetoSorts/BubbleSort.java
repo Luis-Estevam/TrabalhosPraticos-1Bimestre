@@ -1,4 +1,4 @@
-package Trabalhos.sorts;
+package Trabalhos.src.ProjetoSorts;
 
 public class BubbleSort {
 

@@ -1,4 +1,4 @@
-package Trabalhos;
+package Trabalhos.src.ProjetoArvores;
 
 public class No {
     public long valor;

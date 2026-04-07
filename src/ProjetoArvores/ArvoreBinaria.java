@@ -1,6 +1,4 @@
-package Trabalhos.arvores;
-
-import Trabalhos.No;
+package Trabalhos.src.ProjetoArvores;
 
 public class ArvoreBinaria {
     No raiz;
@@ -34,7 +32,7 @@ public class ArvoreBinaria {
                 return null;
             }
 
-            /
+
             if (raiz.esquerda == null) return raiz.direita;
             if (raiz.direita == null) return raiz.esquerda;
 

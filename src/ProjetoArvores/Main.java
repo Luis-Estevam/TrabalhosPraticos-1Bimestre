@@ -1,6 +1,4 @@
-package Trabalhos;
-
-import Trabalhos.arvores.ArvoreBinaria;
+package Trabalhos.src.ProjetoArvores;
 
 public class Main {
     public static void main(String[] args) {

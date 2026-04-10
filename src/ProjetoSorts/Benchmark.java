@@ -1,5 +1,8 @@
 package Trabalhos.src.ProjetoSorts;
 
+import Trabalhos.src.ProjetoSorts.Sorts.BubbleSort;
+import Trabalhos.src.ProjetoSorts.Sorts.InsertionSort;
+
 public class Benchmark {
     BubbleSort bubble = new BubbleSort();
     InsertionSort insertion = new InsertionSort();

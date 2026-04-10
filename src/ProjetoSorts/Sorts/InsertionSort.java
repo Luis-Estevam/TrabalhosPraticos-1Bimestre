@@ -1,4 +1,4 @@
-package Trabalhos.src.ProjetoSorts;
+package Trabalhos.src.ProjetoSorts.Sorts;
 
 public class InsertionSort {
 

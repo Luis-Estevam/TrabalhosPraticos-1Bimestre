@@ -31,5 +31,7 @@ public class MenuSort {
         System.out.println("Melhor caso: " + melhorInsertion);
         System.out.println("Pior caso: " + piorInsertion);
         System.out.println("Medio caso: " + medioInsertion);
+
+
     }
 }

@@ -35,7 +35,7 @@ public class MenuBuscas {
 
                 // Binária
                 inicio = System.nanoTime();
-                buscaSequencial.buscaSequencial(valoresBinario, valor);
+                buscaBinaria.buscaBinaria(valoresBinario, valor);
                 fim = System.nanoTime();
                 temposBin[j] = fim - inicio;
 

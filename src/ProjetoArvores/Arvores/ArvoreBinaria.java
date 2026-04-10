@@ -1,4 +1,6 @@
-package Trabalhos.src.ProjetoArvores;
+package Trabalhos.src.ProjetoArvores.Arvores;
+
+import Trabalhos.src.ProjetoArvores.No;
 
 public class ArvoreBinaria {
     No raiz;
@@ -32,11 +34,8 @@ public class ArvoreBinaria {
                 return null;
             }
 
-
-
             if (raiz.esquerda == null) return raiz.direita;
             if (raiz.direita == null) return raiz.esquerda;
-
 
             No sucessor = raiz.direita;
 
@@ -52,6 +51,28 @@ public class ArvoreBinaria {
         }
 
         return raiz;
+    }
+
+    public int calcularAltura(No raiz) {
+        if (raiz == null)
+            return -1;
+
+        int leftHeight = calcularAltura(raiz.esquerda);
+        int rightHeight = calcularAltura(raiz.direita);
+
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    public boolean busca(No raiz, int valor) {
+        if (raiz == null) return false;
+
+        if (raiz.valor == valor) return true;
+
+        if (valor < raiz.valor) {
+            return busca(raiz.esquerda, valor);
+        }
+
+        return busca(raiz.direita, valor);
     }
 
     public void emOrdem(No raiz) {

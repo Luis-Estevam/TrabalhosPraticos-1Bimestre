@@ -33,6 +33,7 @@ public class ArvoreBinaria {
             }
 
 
+
             if (raiz.esquerda == null) return raiz.direita;
             if (raiz.direita == null) return raiz.esquerda;
 

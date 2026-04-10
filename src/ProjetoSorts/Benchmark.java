@@ -20,5 +20,4 @@ public class Benchmark {
         long fim = System.nanoTime();
         return fim - inicio;
     }
-
 }

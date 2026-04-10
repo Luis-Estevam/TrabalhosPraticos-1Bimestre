@@ -1,6 +1,16 @@
 package Trabalhos.src.ProjetoArvores.Arvores;
 
-import Trabalhos.src.ProjetoArvores.No;
+class No {
+    public int valor;
+    No esquerda;
+    No direita;
+
+    public No(int valor) {
+        this.valor = valor;
+        this.esquerda = null;
+        this.direita = null;
+    }
+}
 
 public class ArvoreBinaria {
     public No raiz;

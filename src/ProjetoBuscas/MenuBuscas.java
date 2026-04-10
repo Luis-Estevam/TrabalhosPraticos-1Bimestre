@@ -7,8 +7,8 @@ import Trabalhos.src.ProjetoSorts.GeradorDeArray;
 
 import java.util.Random;
 
-public class Menu {
-    public void exibir(int repeticoes) {
+public class MenuBuscas {
+    public void exibirBuscas(int repeticoes) {
         int[] volumes = {100, 1000, 10000};
         GeradorDeArray geradorDeArray = new GeradorDeArray();
         BuscaBinaria buscaBinaria = new BuscaBinaria();

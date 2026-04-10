@@ -1,11 +1,8 @@
 package Trabalhos.src.ProjetoSorts;
 
-import java.util.Arrays;
-import java.util.Scanner;
+public class MenuSort {
 
-public class Menu {
-
-    public void exibir(int tamanho) {
+    public void exibirBenchmark(int tamanho) {
 
         GeradorDeArray geradorDeArray = new GeradorDeArray();
         Benchmark benchmark = new Benchmark();

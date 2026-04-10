@@ -16,7 +16,7 @@ public class Menu {
         AnaliseEstatistica analiseEstatistica = new AnaliseEstatistica();
 
         for (int i : volumes) {
-            System.out.println(i + "elementos: ");
+            System.out.println(i + " elementos: ");
 
             long[] temposSeq = new long[repeticoes];
             long[] temposBin = new long[repeticoes];
@@ -31,13 +31,13 @@ public class Menu {
                 long inicio = System.nanoTime();
                 buscaSequencial.buscaSequencial(valores, valor);
                 long fim = System.nanoTime();
-                temposSeq[i] = fim - inicio;
+                temposSeq[j] = fim - inicio;
 
                 // Binária
                 inicio = System.nanoTime();
                 buscaSequencial.buscaSequencial(valoresBinario, valor);
                 fim = System.nanoTime();
-                temposBin[i] = fim - inicio;
+                temposBin[j] = fim - inicio;
 
                 //Arvore
                 ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
@@ -45,7 +45,7 @@ public class Menu {
                 inicio = System.nanoTime();
                 arvoreBinaria.busca(arvoreBinaria.raiz, valor);
                 fim = System.nanoTime();
-                temposArv[i] = fim - inicio;
+                temposArv[j] = fim - inicio;
             }
 
             System.out.println("Busca Sequencial -> Média: " +
@@ -62,6 +62,7 @@ public class Menu {
                     analiseEstatistica.calcularMedia(temposArv) +
                     " ns | Desvio: " +
                     analiseEstatistica.desvioPadrao(temposArv));
+            System.out.println(" ");
         }
         }
     }

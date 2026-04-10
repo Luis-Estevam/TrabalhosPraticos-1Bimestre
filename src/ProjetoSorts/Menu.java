@@ -13,18 +13,18 @@ public class Menu {
         int[] melhorCaso = geradorDeArray.MelhorCaso(tamanho);
         int[] piorCaso = geradorDeArray.PiorCaso(tamanho);
         int[] casoMedio = geradorDeArray.MedioCaso(tamanho);
-        System.out.println(Arrays.toString(melhorCaso));
-        System.out.println(Arrays.toString(piorCaso));
-        System.out.println(Arrays.toString(casoMedio));
 
+        //bubble
         long melhorBubble = benchmark.MedirBubbleSort(melhorCaso);
         long piorBubble = benchmark.MedirBubbleSort(piorCaso);
         long medioBubble = benchmark.MedirBubbleSort(casoMedio);
 
+        //insertion
         long melhorInsertion = benchmark.MedirInsertionSort(melhorCaso);
         long piorInsertion = benchmark.MedirInsertionSort(piorCaso);
         long medioInsertion = benchmark.MedirInsertionSort(casoMedio);
 
+        //Resultados
         System.out.println("====== Tempos BubbleSort: ======");
         System.out.println("Melhor caso: " + melhorBubble);
         System.out.println("Pior caso: " + piorBubble);

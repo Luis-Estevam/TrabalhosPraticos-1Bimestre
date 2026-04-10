@@ -3,7 +3,11 @@ package Trabalhos.src.ProjetoArvores.Arvores;
 import Trabalhos.src.ProjetoArvores.No;
 
 public class ArvoreBinaria {
-    No raiz;
+    public No raiz;
+
+    public ArvoreBinaria() {
+        raiz = null;
+    }
 
     //insercao
     public No inserir(No raiz, int valor) {

@@ -13,6 +13,7 @@ Trabalhos/
 ```bash
 git clone https://github.com/Luis-Estevam/TrabalhosPraticos-1Bimestre.git
 cd TrabalhosPraticos-1Bimestre
+cd src
 javac Main.java
 java Main
 ```
